@@ -6,15 +6,15 @@ import datetime
 import http.client
 
 import pyotp
-token= "WHIQHMHF4C6TCLZNRAGMDPZG3Y"
+token= ""
 
 
 def angelbrok_login():
     try:
         global feedToken, client_code, obj, password, bToken
-        password = "3399"
-        client_code = "A1423070"
-        obj = SmartConnect(api_key="TJa2l5MP")
+        password = ""
+        client_code = ""
+        obj = SmartConnect(api_key="")
 
         data = obj.generateSession(
             client_code, password, pyotp.TOTP(token).now())
